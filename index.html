@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="javascript/kalkulaator.js" defer></script>
+    <title>ÕTK</title>
+</head>
+<body>
+    <div id="content">
+        <h1 id="pealkiri">Õppekava stsenaariumi kalkulaator</h1>
+        <div id="language">
+            <a href="index.html" id="lang_link">Eesti keeles </a>
+            <a onclick="IndexToEng()" id="lang_link">| In English</a>
+        </div>
+        <a href="https://www.tlu.ee" id="pealeht">Tagasi pealehele</a>
+        <p id="green_line">Õppeandmed leiab õppeinfosüsteemist õppetulemuste alt</p>
+        <form action="">
+            <label for="vali_oppekava" id="oppekavad_label">Vali õppekava</label>
+            <select name="vali_oppekava" id="vali_oppekava" required>
+                <option value="" selected disabled id="placeholder">Vali õppekava...</option>
+                <option value="informaatika" id="informaatika">Informaatika</option>
+                <option value="infotehnoloogia" id="infotehnoloogia">Infotehnoloogia</option>
+                <option value="infoteadus" id="infoteadus">Infoteadus</option>
+            </select>
+            <br>
+                <label for="tasuta" id="tasuta_label">Tasuta</label>
+                <input type="radio" name="fee" value="tasuta" id="tasuta" checked required>
+                <label for="tasuline" id="tasuline_label">Tasuline</label>
+                <input type="radio" name="fee" value="tasuline" id="tasuline">
+        </form>
+        <button type="button" id="edasi" onclick="document.location='kalkulaator.html'">Edasi</button>
+    </div>
+</body>
+</html>
