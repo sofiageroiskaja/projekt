@@ -14,7 +14,6 @@ h1{
     font-size: 24px;
 }
 
-
 #pealeht, #lang_link{
     color: rgb(160,206,200);
     text-decoration: underline;
@@ -26,24 +25,35 @@ h1{
     margin-right: 10px;
 }
 
-#green_line{
-    width: 420px;
+#green_line, #green_line2{
     background-color: rgb(109,204,188);
     color: white;
     line-height: 24px;
     padding-left: 5px;
 }
 
-form{
-    width: 380px;
+#green_line{ width: 420px; }
+
+#green_line2{ width: 520px; }
+
+#form, #form2{
     border: 2px solid rgb(109,204,188);
     margin-bottom: 10px;
     padding: 15px 20px;
 }
 
+#form{ width: 380px; }
+
+#form2{ width: 480px; }
+
 #vali_oppekava{
     width: 200px;
     margin-left: 85px;
+}
+
+#eap{
+    margin-left: 156px; 
+    margin-bottom: 15px;
 }
 
 #tasuta{
@@ -51,10 +61,26 @@ form{
     margin-right: 105px;
 }
 
-#edasi{
+.input_jah{ 
+    margin-right: 105px;
+    margin-bottom: 10px;
+}
+
+#edasi, #tagasi, #kalkuleeri{
     background-color: rgb(109,204,188);
     color: white;
     border: rgb(109,204,188);
-    padding: 5px 30px;
+    padding: 5px 20px;
+    margin-right: 10px;
     cursor: pointer;
 }
+
+#sem_arv{ margin-left: 247px; }
+
+#ap_sem_arv{ margin-left: 135px; }
+
+.info_input{ width: 50px; }
+
+input{ margin-bottom: 10px; }
+
+#rigikeel_text{ margin-top: -20px; }

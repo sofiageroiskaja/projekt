@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="javascript/kalkulaator.js" defer></script>
+    <title>ÕTK</title>
+</head>
+<body>
+    <div id="content">
+        <div id="language">
+            <a href="kalkulaator.html" id="lang_link">Eesti keeles </a>
+            <a onclick="CalculatorToEng()" id="lang_link">| In English</a>
+        </div>
+        <h1 id="pealkiri">Õppekava stsenaariumi kalkulaator</h1>
+        <a href="https://www.tlu.ee" id="pealeht">Tagasi pealehele</a>
+        <p id="green_line2">Õppeandmed leiab õppeinfosüsteemist õppetulemuste alt</p>
+        <form action="" id="form2">
+            <label for="sem_arv" id="sem_arv_label">TLÜs viibitud semestrite arv</label>
+            <input type="text" id="sem_arv" name="sem_arv" class="info_input" required><br><br>
+            <label for="ap_sem_arv" id="ap_sem_arv_label">Akadeemilisel puhkusel viibitud semestrite arv</label>
+            <input type="text" id="ap_sem_arv" name="ap_sem_arv" class="info_input" required><br><br>
+            <label for="eap" id="eap_label">Õppekava täitmisel arvesse minevad EAP'd</label>
+            <input type="text" id="eap" name="eap" class="info_input" required><br>
+
+            <p id="valis_text">Kas oled viibinud välisõppes või välispraktikal?</p>
+            <label for="valis_jah" class="jah_label">Jah</label>
+            <input type="radio" name="valisoppe" value="valis_jah" id="valis_jah" onclick="ShowValis()" class="input_jah">
+            <label for="valis_ei" class="ei_label">Ei</label>
+            <input type="radio" name="valisoppe" value="valis_ei" id="valis_ei" onclick="HideValis()" checked required><br>
+            <label for="valis_sem_arv" id="valis_sem_arv_label" style="display: none;">Välisõppes viibitud semestrite arv</label>
+            <input type="text" id="valis_sem_arv" name="valis_sem_arv" class="info_input" style="display: none;" required><br>
+            <label for="valis_eap_arv" id="valis_eap_arv_label" style="display: none;">Välisõppes sooritatud ainepunktide arv</label>
+            <input type="text" id="valis_eap_arv" name="valis_eap_arv" class="info_input" style="display: none;" required><br>
+
+            <p id="rigikeel_text">Kas sulle on määratud ja oled edukalt täitnud riigikeele süvaõppe kõrvaleriala?</p>
+            <label for="riigikeel_jah" class="jah_label">Jah</label>
+            <input type="radio" name="riigikeel" value="riigikeel_jah" id="riigikeel_jah" class="input_jah">
+            <label for="riigikeel_ei" class="ei_label">Ei</label>
+            <input type="radio" name="riigikeel" value="riigikeel_ei" id="riigikeel_ei" checked required>
+            <p id="akpuhkus_text">Kas viibid hetkel akadeemilisel puhkusel?</p>
+            <label for="akpuhkus_jah" class="jah_label">Jah</label>
+            <input type="radio" name="akpuhkus" value="akpuhkus_jah" id="akpuhkus_jah" class="input_jah">
+            <label for="akpuhkus_ei" class="ei_label">Ei</label>
+            <input type="radio" name="akpuhkus" value="akpuhkus_ei" id="akpuhkus_ei" checked required>
+        </form>
+        <button type="button" id="tagasi" onclick="document.location='index.html'">Tagasi</button>
+        <button type="button" id="kalkuleeri" onclick="document.location=''">Kalkuleeri</button>
+    </div>
+</body>
+</html>
