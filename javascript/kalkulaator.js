@@ -20,11 +20,8 @@ function CalculatorToEng(){
     document.getElementById('pealeht').innerHTML = "Back to mainpage";
     document.getElementById('green_line2').innerHTML = "Study data can be found in Õis under study results";
     document.getElementById('sem_arv_label').innerHTML = "Number of semesters spent at TU";
-    document.getElementById('sem_arv_label').style.marginRight = "-35px";
     document.getElementById('ap_sem_arv_label').innerHTML = "Number of semesters spent on academic leave";
-    document.getElementById('ap_sem_arv_label').style.marginRight = "-2px";
     document.getElementById('eap_label').innerHTML = "EAPs taken into account when completing the curriculum";
-    document.getElementById('eap_label').style.marginRight = "-84px";
     document.getElementById('valis_text').innerHTML = "Have you studied abroad or on internship?";
     document.getElementById('rigikeel_text').innerHTML = "Have you been assigned and completed the minor specialization in the state language?";
     document.getElementById('akpuhkus_text').innerHTML = "Are you currently on academic leave?";
@@ -32,6 +29,15 @@ function CalculatorToEng(){
     document.getElementById('valis_eap_arv_label').innerHTML = "Number of EAP completed in abroad study";
     document.getElementById('valis_sem_arv').style.marginLeft  = "-8px";
     document.getElementById('valis_eap_arv').style.marginLeft  = "-20px";
+    document.getElementById('tagasi').innerText = "Back";
+    document.getElementById('kalkuleeri').innerText = "Calculate";
+    document.getElementById('sem_arv').style.marginLeft = "197px";
+    document.getElementById('ap_sem_arv').style.marginLeft = "118px";
+    document.getElementById('eap').style.marginLeft = "57px";
+    document.getElementById('esimene_abi_tekst').innerHTML = "Help me";
+    document.getElementById('teine_abi_tekst').innerHTML = "Help help";
+    document.getElementById('kolmas_abi_tekst').innerHTML = "Help meeee";
+
 
     var x = document.getElementsByClassName("jah_label");
     var i;

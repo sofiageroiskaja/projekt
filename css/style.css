@@ -52,7 +52,7 @@ h1{
 }
 
 #eap{
-    margin-left: 156px; 
+    margin-left: 140px; 
     margin-bottom: 15px;
 }
 
@@ -75,12 +75,43 @@ h1{
     cursor: pointer;
 }
 
-#sem_arv{ margin-left: 247px; }
+#sem_arv{ margin-left: 232px; }
 
-#ap_sem_arv{ margin-left: 135px; }
+#ap_sem_arv{ margin-left: 120px; }
 
 .info_input{ width: 50px; }
 
 input{ margin-bottom: 10px; }
 
 #rigikeel_text{ margin-top: -20px; }
+
+.fa{
+    font-size: 14px;
+    color: rgb(109,204,188);
+}
+
+.fa_tekst{
+    display: none;
+}
+
+.abinupp{
+    position: relative;
+    display: inline-block;
+}
+  
+.abinupp .abi_tekst{
+    visibility: hidden;
+    width: 100px;
+    background-color: rgb(109,204,188);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    top: -5px;
+    margin-left: 5px;
+}
+
+.abinupp:hover .abi_tekst{
+    visibility: visible;
+}
