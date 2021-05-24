@@ -23,19 +23,19 @@
                 <i class="fa fa-question-circle" id="esimene_abi"></i>
                 <span class="abi_tekst" id="esimene_abi_tekst">Abi tekst</span>
             </div>
-            <input type="number" id="sem_arv" name="sem_arv" class="info_input" required><br><br>
+            <input type="number" min="0" id="sem_arv" name="sem_arv" class="info_input" required><br><br>
             <label for="ap_sem_arv" id="ap_sem_arv_label">Akadeemilisel puhkusel viibitud semestrite arv</label>
             <div class="abinupp">
                 <i class="fa fa-question-circle" id="teine_abi"></i>
                 <span class="abi_tekst" id="teine_abi_tekst">Abi tekst</span>
             </div>
-            <input type="number" id="ap_sem_arv" name="ap_sem_arv" class="info_input" required><br><br>
+            <input type="number" min="0" id="ap_sem_arv" name="ap_sem_arv" class="info_input" required><br><br>
             <label for="eap" id="eap_label">Õppekava täitmisel arvesse minevad EAP'd</label>
             <div class="abinupp">
                 <i class="fa fa-question-circle" id="kolmas_abi"></i>
                 <span class="abi_tekst" id="kolmas_abi_tekst">Abi tekst</span>
             </div>
-            <input type="number" id="eap" name="eap" class="info_input" required><br>
+            <input type="number" min="0" id="eap" name="eap" class="info_input" required><br>
 
             <p id="valis_text">Kas oled viibinud välisõppes või välispraktikal?</p>
             <label for="valis_jah" class="jah_label">Jah</label>
@@ -43,9 +43,9 @@
             <label for="valis_ei" class="ei_label">Ei</label>
             <input type="radio" name="valisoppe" value="valis_ei" id="valis_ei" onclick="HideValis()" checked required><br>
             <label for="valis_sem_arv" id="valis_sem_arv_label" style="display: none;">Välisõppes viibitud semestrite arv</label>
-            <input type="number" id="valis_sem_arv" name="valis_sem_arv" class="info_input" style="display: none;" required><br>
+            <input type="number" min="0" id="valis_sem_arv" name="valis_sem_arv" class="info_input" style="display: none;" required><br>
             <label for="valis_eap_arv" id="valis_eap_arv_label" style="display: none;">Välisõppes sooritatud ainepunktide arv</label>
-            <input type="number" id="valis_eap_arv" name="valis_eap_arv" class="info_input" style="display: none;" required><br>
+            <input type="number" min="0" id="valis_eap_arv" name="valis_eap_arv" class="info_input" style="display: none;" required><br>
 
             <p id="rigikeel_text">Kas sulle on määratud ja oled edukalt täitnud riigikeele süvaõppe kõrvaleriala?</p>
             <label for="riigikeel_jah" class="jah_label">Jah</label>

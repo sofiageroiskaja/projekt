@@ -9,7 +9,6 @@ function IndexToEng() {
     document.getElementById('tasuline_label').style.marginLeft = "13px";
     document.getElementById('edasi').innerText = "Next";
     document.getElementById('edasi').style.color = "white";
-    document.getElementById('placeholder').innerHTML = "Choose a curriculum...";
     document.getElementById('informaatika').innerHTML = "Informatics";
     document.getElementById('infotehnoloogia').innerHTML = "Infotechnology";
     document.getElementById('infoteadus').innerHTML = "information science";
